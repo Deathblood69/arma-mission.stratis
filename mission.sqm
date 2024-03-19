@@ -12,18 +12,18 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=474;
+		nextID=477;
 	};
 	class LayerIndexProvider
 	{
-		nextID=114;
+		nextID=123;
 	};
 	class Camera
 	{
-		pos[]={3311.1272,275.4025,2858.7139};
-		dir[]={-0.20197396,-0.62966073,0.75015593};
-		up[]={-0.1637018,0.77687019,0.60800844};
-		aside[]={0.96561283,7.4505806e-009,0.25998414};
+		pos[]={3305.0757,248.0274,2880.7246};
+		dir[]={0,-0.70710683,0.70710683};
+		up[]={0,0.70710677,0.70710677};
+		aside[]={0.99999994,0,-0};
 	};
 };
 binarizationWanted=0;
@@ -135,6 +135,53 @@ class Intro
 		forecastWaves=0.1;
 		startFogDecay=0.0049333;
 		forecastFogDecay=0.0049333;
+	};
+	class Entities
+	{
+		items=1;
+		class Item0
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=2;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3302.186,228.57216,2893.5784};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						isPlayer=1;
+					};
+					id=475;
+					type="B_Story_Protagonist_F";
+					atlOffset=-1.5258789e-005;
+				};
+				class Item1
+				{
+					dataType="Waypoint";
+					loiterAltitude=-3.4028235e+038;
+					position[]={3302.1299,229.19595,2921.6177};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+					id=476;
+					type="GetIn";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=474;
+			atlOffset=-1.5258789e-005;
+		};
 	};
 };
 class Mission
@@ -3774,7 +3821,7 @@ class Mission
 							};
 							id=241;
 							type="B_MRAP_01_F";
-							atlOffset=-0.0090484619;
+							atlOffset=0.0045928955;
 						};
 						class Item5
 						{
@@ -3799,7 +3846,7 @@ class Mission
 						};
 					};
 					id=466;
-					atlOffset=-0.068008423;
+					atlOffset=-0.066055298;
 				};
 				class Item6
 				{
@@ -3935,7 +3982,7 @@ class Mission
 				};
 			};
 			id=473;
-			atlOffset=-0.41116333;
+			atlOffset=-0.41090393;
 		};
 	};
 };
