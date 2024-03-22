@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=557;
+		nextID=561;
 	};
 	class MarkerIDProvider
 	{
@@ -24,10 +24,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={3264.9221,35.792847,5766.085};
-		dir[]={0,-0.70710683,0.70710683};
-		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,-0};
+		pos[]={3284.3267,254.19803,2895.4639};
+		dir[]={-1.2363449e-007,-0.70710683,0.70710683};
+		up[]={-1.2363449e-007,0.70710671,0.70710683};
+		aside[]={1,0,1.7484557e-007};
 	};
 };
 binarizationWanted=0;
@@ -61,7 +61,8 @@ addons[]=
 	"A3_Soft_F_Gamma_Truck_02",
 	"A3_Soft_F_Beta_MRAP_03",
 	"A3_Modules_F_Intel",
-	"A3_Ui_F"
+	"A3_Ui_F",
+	"A3_Modules_F_StrategicMap"
 };
 class AddonsMetaData
 {
@@ -221,7 +222,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=3;
+		items=5;
 		class Item0
 		{
 			dataType="Layer";
@@ -410,6 +411,7 @@ class Mission
 							{
 							};
 							id=479;
+							atlOffset=142.91;
 						};
 						class Item9
 						{
@@ -576,6 +578,7 @@ class Mission
 							{
 							};
 							id=483;
+							atlOffset=142.91;
 						};
 						class Item10
 						{
@@ -839,6 +842,7 @@ class Mission
 							{
 							};
 							id=485;
+							atlOffset=142.91;
 						};
 						class Item11
 						{
@@ -4405,7 +4409,6 @@ class Mission
 				{
 					dataType="Layer";
 					name="Objectifs";
-					state=3;
 					class Entities
 					{
 						items=1;
@@ -5792,7 +5795,7 @@ class Mission
 								};
 							};
 							id=541;
-							atlOffset=-86.677185;
+							atlOffset=-115.95351;
 						};
 						class Item1
 						{
@@ -5843,7 +5846,7 @@ class Mission
 									fillName="FDiagonal";
 									a=180;
 									b=180;
-									angle=134.20198;
+									angle=134.20195;
 									id=540;
 									atlOffset=7.3432922e-005;
 								};
@@ -5904,7 +5907,7 @@ class Mission
 									fillName="FDiagonal";
 									a=800;
 									b=500;
-									angle=103.33799;
+									angle=103.33797;
 									id=547;
 									atlOffset=-0.00033569336;
 								};
@@ -5944,11 +5947,11 @@ class Mission
 						};
 					};
 					id=528;
-					atlOffset=-0.50234604;
+					atlOffset=-6.0947876;
 				};
 			};
 			id=477;
-			atlOffset=26.637428;
+			atlOffset=-8.6850128;
 		};
 		class Item1
 		{
@@ -5979,6 +5982,102 @@ class Mission
 			drawBorder=1;
 			id=555;
 			atlOffset=1.5258789e-005;
+		};
+		class Item3
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={2494.8992,0,6510.8447};
+			};
+			id=558;
+			type="ModuleStrategicMapORBAT_F";
+			atlOffset=29.62763;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleStrategicMapORBAT_F_Path";
+					expression="_this setVariable ['Path',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="missionConfigFile >> ""CfgORBAT"" >> ""AAF""";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleStrategicMapORBAT_F_Tags";
+					expression="_this setVariable ['Tags',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ModuleStrategicMapORBAT_F_Parent";
+					expression="_this setVariable ['Parent',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="missionConfigFile >> ""CfgORBAT"" >> ""AAF""";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ModuleStrategicMapORBAT_F_Tiers";
+					expression="_this setVariable ['Tiers',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="2";
+						};
+					};
+				};
+				nAttributes=4;
+			};
+		};
+		class Item4
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3304.6306,228.88622,2896.262};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						isPlayer=1;
+					};
+					id=560;
+					type="B_officer_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=559;
 		};
 	};
 	class Connections
