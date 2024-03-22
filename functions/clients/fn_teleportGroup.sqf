@@ -4,7 +4,9 @@
 	returns: nothing
 */
 
-params ["_unit", "_position"];
+params ["_unit", "_marker"];
+
+private _position = getMarkerPos _marker;
 
 private _group = group _unit;
 

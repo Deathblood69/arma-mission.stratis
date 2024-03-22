@@ -5,5 +5,6 @@ class FN {
         class teleportGroup {}
         class addArsenal {}
         class openStrategicMap {}
+        class killOrbatUnit {}
     }
 }
