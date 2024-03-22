@@ -5,7 +5,7 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=513;
+	toggles=641;
 	mods[]=
 	{
 		"3denEnhanced"
@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=465;
+		nextID=511;
 	};
 	class Camera
 	{
-		pos[]={2848.345,100.37938,3665.5444};
-		dir[]={-0.13879037,-0.73099214,0.66812253};
-		up[]={-0.1486764,0.68238592,0.71571285};
-		aside[]={0.9790979,0,0.20338987};
+		pos[]={3091.5354,153.84161,3794.9785};
+		dir[]={0.77022785,-0.58527571,-0.25345436};
+		up[]={0.5559569,0.81082857,-0.18294623};
+		aside[]={-0.31258205,5.4948759e-007,-0.94991249};
 	};
 };
 binarizationWanted=0;
@@ -753,7 +753,6 @@ class Mission
 				{
 					dataType="Layer";
 					name="1 - Hub";
-					state=1;
 					class Entities
 					{
 						items=7;
@@ -1255,11 +1254,10 @@ class Mission
 							{
 							};
 							id=618;
-							atlOffset=142.91;
 						};
 					};
 					id=473;
-					atlOffset=151.3373;
+					atlOffset=-1.2220001;
 				};
 				class Item1
 				{
@@ -1280,13 +1278,12 @@ class Mission
 									dataType="Logic";
 									class PositionInfo
 									{
-										position[]={2725.3359,47.146465,3834.9199};
-										angles[]={0.039985489,0,6.2556963};
+										position[]={3124.8472,99.077888,3814.729};
+										angles[]={6.2706842,0,0.12189256};
 									};
 									name="mission1";
 									id=608;
 									type="ModuleStrategicMapMission_F";
-									atlOffset=3.8146973e-006;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -1380,7 +1377,7 @@ class Mission
 										class Item0
 										{
 											dataType="Trigger";
-											position[]={3348.9199,234.65379,2921.104};
+											position[]={2850.9592,44.262043,3705.8442};
 											class Attributes
 											{
 												name="mission1_triggerDeliver_end";
@@ -1392,6 +1389,7 @@ class Mission
 											};
 											id=512;
 											type="EmptyDetector";
+											atlOffset=3.8146973e-006;
 										};
 										class Item1
 										{
@@ -1410,7 +1408,7 @@ class Mission
 										class Item2
 										{
 											dataType="Trigger";
-											position[]={2842.4744,43.489853,3721.7151};
+											position[]={2842.4741,43.489853,3721.7151};
 											class Attributes
 											{
 												name="mission1_triggerEnd";
@@ -1424,7 +1422,7 @@ class Mission
 										class Item3
 										{
 											dataType="Trigger";
-											position[]={2813.364,42.833977,3704.7671};
+											position[]={3142.5908,115.76788,3776.4268};
 											angle=6.2806187;
 											class Attributes
 											{
@@ -1514,7 +1512,7 @@ class Mission
 										};
 									};
 									id=650;
-									atlOffset=27.057274;
+									atlOffset=26.848167;
 								};
 								class Item2
 								{
@@ -2178,7 +2176,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={3349.4167,234.63722,2919.811};
+										position[]={2850.9475,44.261868,3705.8271};
 									};
 									side="Empty";
 									class Attributes
@@ -2187,7 +2185,7 @@ class Mission
 									};
 									id=642;
 									type="Land_HelipadEmpty_F";
-									atlOffset=6.1035156e-005;
+									atlOffset=3.8146973e-006;
 								};
 								class Item4
 								{
@@ -2408,7 +2406,7 @@ class Mission
 								};
 							};
 							id=490;
-							atlOffset=24.422394;
+							atlOffset=30.5056;
 						};
 						class Item1
 						{
@@ -2734,7 +2732,7 @@ class Mission
 						};
 					};
 					id=489;
-					atlOffset=-76.518158;
+					atlOffset=-77.326797;
 				};
 				class Item2
 				{
@@ -2746,12 +2744,11 @@ class Mission
 						class Item0
 						{
 							dataType="Marker";
-							position[]={2811.696,42.926998,3704.696};
+							position[]={3142.2158,115.72918,3777.2791};
 							name="objectif_01";
 							text="Insertion Mission 01";
 							type="mil_box";
 							id=761;
-							atlOffset=0.00050354004;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -2988,7 +2985,7 @@ class Mission
 						};
 					};
 					id=528;
-					atlOffset=-11.563211;
+					atlOffset=-11.723122;
 				};
 				class Item3
 				{
@@ -20721,7 +20718,7 @@ class Mission
 				};
 			};
 			id=477;
-			atlOffset=-7.9479904;
+			atlOffset=22.118996;
 		};
 		class Item1
 		{
