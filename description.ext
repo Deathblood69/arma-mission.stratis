@@ -1,1 +1,9 @@
+// === ORBAT === //
+
 #include "orbat\orbat.hpp"
+
+// === FUNCTIONS === //
+
+class cfgFunctions {
+    #include "functions\cfgFunctions.hpp"
+}
