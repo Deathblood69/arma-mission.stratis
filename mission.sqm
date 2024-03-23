@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=2124;
+		nextID=2134;
 	};
 	class MarkerIDProvider
 	{
@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=535;
+		nextID=559;
 	};
 	class Camera
 	{
-		pos[]={1970.2542,52.726513,3489.2041};
-		dir[]={-0.88074297,-0.43215919,0.19372745};
-		up[]={-0.42206952,0.90179735,0.092838034};
-		aside[]={0.21482371,0,0.97665292};
+		pos[]={5217.7114,228.04115,5009.96};
+		dir[]={0.31859589,-0.5045647,-0.80244076};
+		up[]={0.18619074,0.86337382,-0.46895471};
+		aside[]={-0.92942435,0,-0.36901262};
 	};
 };
 binarizationWanted=0;
@@ -101,13 +101,15 @@ addons[]=
 	"cba_xeh",
 	"A3_Props_F_Orange_Items_Decorative",
 	"A3_Structures_F_Bootcamp_Items_Electronics",
-	"A3_Structures_F_EPA_Civ_Constructions"
+	"A3_Structures_F_EPA_Civ_Constructions",
+	"A3_Props_F_Enoch_Military_Equipment",
+	"A3_Props_F_Decade_Objectives"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=23;
+		items=25;
 		class Item0
 		{
 			className="A3_Modules_F";
@@ -269,6 +271,18 @@ class AddonsMetaData
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
+		class Item23
+		{
+			className="A3_Props_F_Enoch";
+			name="Arma 3 Contact Platform - Decorative and Mission Objects";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item24
+		{
+			className="A3_Props_F_Decade_Objectives";
+			name="A3_Props_F_Decade_Objectives";
+		};
 	};
 };
 class DynamicSimulation
@@ -283,7 +297,9 @@ dlcs[]=
 {
 	"Orange",
 	"Expansion",
-	"Heli"
+	"Heli",
+	"Enoch",
+	"Argo"
 };
 randomSeed=9402765;
 class ScenarioData
@@ -741,7 +757,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=16;
+		items=24;
 		class Item0
 		{
 			dataType="Layer";
@@ -2876,7 +2892,7 @@ class Mission
 							text="Insertion Mission 03 ";
 							type="mil_box";
 							id=536;
-							atlOffset=7.6293945e-006;
+							atlOffset=1.5258789e-005;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -20871,7 +20887,6 @@ class Mission
 			};
 			id=2109;
 			type="EmptyDetector";
-			atlOffset=7.6293945e-006;
 		};
 		class Item3
 		{
@@ -21560,6 +21575,148 @@ class Mission
 				};
 				nAttributes=1;
 			};
+		};
+		class Item16
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5220.9092,224.09834,5001.9297};
+				angles[]={6.2806959,3.4121761,0.0099949092};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=2125;
+			type="Land_Router_01_sand_F";
+			atlOffset=0.80867004;
+		};
+		class Item17
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5220.4956,224.14824,5001.9478};
+				angles[]={6.2806892,3.1374738,0.010000736};
+			};
+			side="Empty";
+			class Attributes
+			{
+				init="[ " \n " player, " \n " ""Kill"", " \n " """", """", " \n " ""true"", ""true"", " \n " { hint ""Started!"" }, " \n " { systemChat str (_this select 3) }, " \n " { player setDamage 1 }, " \n " { hint ""Afraid of death?"" }, " \n " [], 10, nil, true, false " \n "] call BIS_fnc_holdActionAdd;";
+			};
+			id=2126;
+			type="Land_Laptop_03_olive_F";
+			atlOffset=0.81098938;
+		};
+		class Item18
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5220.3994,223.57991,5001.7354};
+				angles[]={6.2806959,6.2771339,0.0099949092};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2124;
+			type="Land_CampingTable_F";
+			atlOffset=1.5258789e-005;
+		};
+		class Item19
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5219.917,227.7244,5000.166};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=2128;
+			type="RuggedTerminal_01_communications_hub_F";
+		};
+		class Item20
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5220.1167,223.31461,5001.7324};
+				angles[]={6.2806959,0,0.0099949092};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2129;
+			type="Land_BatteryPack_01_closed_sand_F";
+			atlOffset=1.5258789e-005;
+		};
+		class Item21
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5219.7344,224.22745,5001.7515};
+				angles[]={0.0011920601,3.2700753,6.272963};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=2130;
+			type="Land_MultiScreenComputer_01_closed_sand_F";
+			atlOffset=0.81430054;
+		};
+		class Item22
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5222.0889,223.79805,5002.4814};
+				angles[]={-0,5.363873,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2131;
+			type="Land_PortableServer_01_sand_F";
+		};
+		class Item23
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={5220.0879,223.17239,5004.0024};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+					};
+					id=2133;
+					type="B_support_Mort_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=2132;
 		};
 	};
 	class Connections
